@@ -47,7 +47,7 @@ const FooterSection = () => {
     }
 
     try {
-      await axios.post("http://localhost:5000/emails", inputData);
+      await axios.post("https://vector-fawn.vercel.app/emails", inputData);
 
       setToast({
         open: true,

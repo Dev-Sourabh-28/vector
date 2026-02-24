@@ -22,9 +22,12 @@ import {GoogleLogin} from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 import { jwtDecode } from "jwt-decode";
 
+const BASE_URL = import.meta.env.VITE_API_URL;
+
 const Register = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
+  const [passwordError, setPasswordError] = useState("");
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -49,10 +52,28 @@ const handleLogin = () => {
     setFormData({ ...formData, [e.target.name]: e.target.value });
   };
 
+  const validatePassword = (password: string) => {
+  // Min 8 chars, 1 letter, 1 number, 1 special char
+  const regex =
+    /^(?=.*[A-Za-z])(?=.*\d)(?=.*[@$!%*?&^#()[\]{}\-_=+]).{8,}$/;
+
+  return regex.test(password);
+};
+
   const handleSubmit = async (e: React.FormEvent) => {
   e.preventDefault();
+
+  if (!validatePassword(formData.password)) {
+    setPasswordError(
+      "Minimum 8 characters, include letter, number & special character."
+    );
+    return; // Stop submission
+  } else {
+    setPasswordError("");
+  }
+
   try {
-    await axios.post("http://localhost:5000/users", formData);
+    await axios.post(`${BASE_URL}/users`, formData);
 
     setToast({
       open: true,
@@ -177,12 +198,12 @@ const handleLogin = () => {
 
       // Check if user already exists
       const res = await axios.get(
-        `http://localhost:5000/users?email=${googleUser.email}`
+        `https://vector-fawn.vercel.app/users?email=${googleUser.email}`
       );
 
       if (res.data.length === 0) {
         // If not exists → save to db.json
-        await axios.post("http://localhost:5000/users", googleUser);
+        await axios.post("https://vector-fawn.vercel.app/users", googleUser);
       }
 
       setToast({
@@ -271,6 +292,8 @@ const handleLogin = () => {
               onChange={handleChange}
               required
               placeholder="Min. 8 characters"
+               error={Boolean(passwordError)}
+              helperText={passwordError}
               sx={{ ...inputSx, mb: 1 }}
               InputProps={{
                 startAdornment: (

@@ -20,6 +20,8 @@ import VisibilityOutlinedIcon from "@mui/icons-material/VisibilityOutlined";
 import { GoogleLogin } from "@react-oauth/google";
 import { useNavigate } from "react-router-dom";
 
+const BASE_URL = import.meta.env.VITE_API_URL;
+
 const Login = () => {
   const navigate = useNavigate();
   const [showPassword, setShowPassword] = useState(false);
@@ -51,9 +53,8 @@ const Login = () => {
 
   try {
     // Check email only
-    const res = await axios.get(
-      `http://localhost:5000/users?email=${email}`
-    );
+    const res = await axios.post(`${BASE_URL}/emails`, { email });
+
 
     console.log("Response:", res.data);
 
