@@ -1,6 +1,6 @@
-import type { TypographyOptions } from "@mui/material/styles";
+import type { TypographyVariantsOptions } from "@mui/material/styles";
 
-const typography: TypographyOptions = {
+const typography: TypographyVariantsOptions = {
   fontFamily: "Inter, sans-serif",
 
   h3: {

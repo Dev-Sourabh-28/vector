@@ -1,4 +1,4 @@
-import Navbar from "../components/layout/Navbar";
+// import Navbar from "../components/layout/Navbar";
 import HeroSection from "../sections/HeroSection";
 import ClientsSection from '../sections/ClientSection'
 import CommunitySection from "../sections/CommunitySection";
@@ -9,7 +9,7 @@ import TestimonialSection from "../sections/TestimonialSection";
 import BlogSection from "../sections/BlogSection";
 import FooterSection from "../sections/FooterSection";
 import CTASection from "../sections/CTASection";
-import Register from "./Register";
+// import Register from "./Register";
 
 const Home = () => {
   return (

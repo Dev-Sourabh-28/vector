@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
   Card,
   CardContent,
   CardMedia,
@@ -12,19 +11,18 @@ import {
   InputAdornment,
   TextField,
 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import SearchIcon from "@mui/icons-material/Search";
-import AccessTimeIcon from "@mui/icons-material/AccessTime";
 import ArrowForwardIcon from "@mui/icons-material/ArrowForward";
-import BookmarkBorderIcon from "@mui/icons-material/BookmarkBorder";
 import blogData from "../data/blogData.json";
 
-const tagColors: Record<string, string> = {
-  Product: "#E8F5E9",
-  Community: "#E3F2FD",
-  Design: "#F3E5F5",
-  Marketing: "#FFF3E0",
-  Engineering: "#FCE4EC",
-};
+// const tagColors: Record<string, string> = {
+//   Product: "#E8F5E9",
+//   Community: "#E3F2FD",
+//   Design: "#F3E5F5",
+//   Marketing: "#FFF3E0",
+//   Engineering: "#FCE4EC",
+// };
 
 const Blog = () => {
   const { categories, featured, posts } = blogData;

@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
   Button,
   Card,
   CardContent,
@@ -12,6 +11,7 @@ import {
   AccordionSummary,
   AccordionDetails,
 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 import CheckIcon from "@mui/icons-material/Check";
 import CloseIcon from "@mui/icons-material/Close";
 import StarBorderIcon from "@mui/icons-material/StarBorder";
@@ -30,7 +30,7 @@ const Pricing = () => {
 
   const handleAccordion =
     (panel: number) =>
-    (event: React.SyntheticEvent, isExpanded: boolean) => {
+    (_: React.SyntheticEvent, isExpanded: boolean) => {
       setExpanded(isExpanded ? panel : false);
     };
 

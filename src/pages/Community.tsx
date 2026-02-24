@@ -2,7 +2,6 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
   Card,
   CardContent,
   Avatar,
@@ -10,7 +9,7 @@ import {
   Button,
   IconButton,
 } from "@mui/material";
-
+import Grid from "@mui/material/Grid";
 import { useRef } from "react";
 import {useNavigate} from "react-router-dom"
 

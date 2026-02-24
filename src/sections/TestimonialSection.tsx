@@ -27,7 +27,7 @@ const TestimonialSection = () => {
           <Box
             component="img"
             src={CustomerImage}
-            alt={data.imageAlt}
+            alt={data.name}
             sx={{
               width: 320,
               borderRadius: 3,
@@ -59,7 +59,7 @@ const TestimonialSection = () => {
               color="text.secondary"
               sx={{ mb: 3 }}
             >
-              {data.designation}
+              {data.role}
             </Typography>
 
             {/* Logos + CTA */}
@@ -90,7 +90,7 @@ const TestimonialSection = () => {
                   ml: 2
                 }}
               >
-                {data.cta} →
+                {data.linkText} →
               </Typography>
             </Box>
           </Box>

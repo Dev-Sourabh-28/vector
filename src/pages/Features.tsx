@@ -2,11 +2,11 @@ import {
   Box,
   Container,
   Typography,
-  Grid,
   Button,
   Card,
   CardContent,
 } from "@mui/material";
+import Grid from "@mui/material/Grid";
 
 import SpeedIcon from "@mui/icons-material/Speed";
 import GroupsIcon from "@mui/icons-material/Groups";
