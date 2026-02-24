@@ -1,0 +1,38 @@
+{
+  "users": [
+    {
+      "id": "2890",
+      "name": "Sourabh Bansotiya",
+      "email": "sobansotiya@bestpeers.in",
+      "password": "12345678"
+    },
+    {
+      "id": "94df",
+      "name": "Krishna",
+      "email": "krishna@gmail.com",
+      "password": "123456"
+    },
+    {
+      "id": "f188",
+      "name": "John Doe",
+      "email": "john@gmail.com",
+      "password": "john123"
+    },
+    {
+      "id": "52d7",
+      "name": "admin",
+      "email": "admin@gmail.com",
+      "password": "123456789"
+    }
+  ],
+  "emails": [
+    {
+      "id": "066a",
+      "email": "shlok@gmail.com"
+    },
+    {
+      "id": "a702",
+      "email": "john@gmail.com"
+    }
+  ]
+}
