@@ -1,9 +1,9 @@
 import { Box, Container, Typography, Link } from "@mui/material";
 import data from "../data/blogSections.json";
 
-import Blog1 from "../assets/blog/blog.png";
-import Blog2 from "../assets/blog/blog1.png";
-import Blog3 from "../assets/blog/blog2.png";
+import Blog1 from "../../public/images/blog/blog.png";
+import Blog2 from "../../public/images/blog/blog1.png";
+import Blog3 from "../../public/images/blog/blog2.png";
 
 const imageMap: any = {
     "blog1.jpg": Blog1,

@@ -1,13 +1,13 @@
 import { Box, Container, Typography } from "@mui/material";
 import data from "../data/testimonial.json";
 
-import CustomerImage from "../assets/tesla.png";
+import CustomerImage from "../../public/images/tesla.png"
 
-import Logo1 from "../assets/Logo1.png";
-import Logo2 from "../assets/Logo2.png";
-import Logo3 from "../assets/Logo3.png";
-import Logo4 from "../assets/Logo4.png";
-import Logo5 from "../assets/Logo5.png";
+import Logo1 from "../../public/images/Logo1.png";
+import Logo2 from "../../public/images/Logo2.png";
+import Logo3 from "../../public/images/Logo3.png";
+import Logo4 from "../../public/images/Logo4.png";
+import Logo5 from "../../public/images/Logo5.png";
 
 const logos = [Logo1, Logo2, Logo3, Logo4, Logo5];
 

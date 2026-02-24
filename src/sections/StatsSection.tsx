@@ -1,10 +1,10 @@
 import { Box, Container, Typography } from "@mui/material";
 import data from "../data/statsSection.json";
 
-import MembersIcon from "../assets/stats/member.png";
-import ClubsIcon from "../assets/stats/club.png";
-import BookingsIcon from "../assets/stats/event.png";
-import PaymentsIcon from "../assets/stats/payment.png";
+import MembersIcon from "../../public/images/stats/member.png";
+import ClubsIcon from "../../public/images/stats/club.png";
+import BookingsIcon from "../../public/images/stats/event.png";
+import PaymentsIcon from "../../public/images/stats/payment.png";
 
 // Proper typing instead of `any`
 type IconKey = "members" | "clubs" | "bookings" | "payments";

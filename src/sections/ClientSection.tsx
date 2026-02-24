@@ -1,10 +1,13 @@
 import { Box, Container, Typography } from "@mui/material";
 import content from "../data/client.json";
 
-import Logo1 from "../assets/Logo1.png";
-import Logo2 from "../assets/Logo2.png";
+import Logo1 from "../../public/images/Logo1.png";
+import Logo2 from "../../public/images/Logo2.png";
+import Logo3 from "../../public/images/Logo3.png";
+import Logo4 from "../../public/images/Logo4.png";
+import Logo5 from "../../public/images/Logo5.png";
 
-const logos = [Logo1, Logo2, Logo1, Logo2, Logo1, Logo2, Logo1];
+const logos = [Logo1, Logo2, Logo3, Logo4, Logo5, Logo2, Logo1];
 
 const ClientsSection = () => {
   return (

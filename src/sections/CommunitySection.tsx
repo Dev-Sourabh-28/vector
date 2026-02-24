@@ -1,9 +1,9 @@
 import { Box, Container, Typography, Card, CardContent } from "@mui/material";
 import content from "../data/community.json";
 
-import MembershipIcon from "../assets/icons/Icon.png";
-import NationalIcon from "../assets/icons/Icon1.png";
-import ClubsIcon from "../assets/icons/Icon2.png";
+import MembershipIcon from "../../public/images/icons/Icon.png";
+import NationalIcon from "../../public/images/icons/Icon1.png";
+import ClubsIcon from "../../public/images/icons/Icon2.png";
 
 const icons = [MembershipIcon, NationalIcon, ClubsIcon];
 

@@ -1,6 +1,6 @@
 import { Box, Container, Typography, Button } from "@mui/material";
 import data from "../data/extra.json";
-import FooterImage from "../assets/pana.png";
+import FooterImage from "../../public/images/pana.png";
 
 const FooterDesignSection = () => {
   return (

@@ -1,6 +1,6 @@
 import { Box, Container, Typography, Button } from "@mui/material";
 import content from "../data/pixelgrade.json";
-import pixelImage from "../assets/Frame35.png"
+import pixelImage from "../../public/images/Frame35.png"
 
 const PixelgradeSection = () => {
   return (

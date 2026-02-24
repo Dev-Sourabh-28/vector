@@ -1,6 +1,6 @@
 import { Box, Typography, Button, Container } from "@mui/material";
 import content from "../data/home.json";
-import heroImage from "../assets/hero.png";
+import heroImage from "../../public/images/hero.png";
 import { useNavigate } from "react-router-dom";
 
 const HeroSection = () => {

@@ -16,7 +16,7 @@ import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { useNavigate } from "react-router-dom";
 import { useState } from "react";
-import mainlogo from "../../assets/mainlogo.png";
+import mainlogo from "../../../public/images/mainlogo.png";
 
 const Navbar = () => {
   const navigate = useNavigate();
